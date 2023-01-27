@@ -6,7 +6,7 @@ A simple page that uses JavaScript to convert input values. (Convertion values u
 
 ## `New City Bakeries`
 With this part, we were tasked with creating a page that reads user input, calculates their total and prints them out at the bottom after submission.
-Initially, the user is only able to enter their information as well as selceting a cake shape but further fields are displayed once they select a cake shape.
+Initially, the user is only able to enter their information as well as selecting a cake shape but further fields are displayed once they select a cake shape.
 
 ## `Travel Site`
 In this single page HTML, we were tasked with testing out transitioning with images.
