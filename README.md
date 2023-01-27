@@ -9,7 +9,7 @@ With this part, we were tasked with creating a page that reads user input, calcu
 Initially, the user is only able to enter their information as well as selceting a cake shape but further fields are displayed once they select a cake shape.
 
 ## `Travel Agency`
-In this single page HTML, we were tasked with testing out transitions with images.
+In this single page HTML, we were tasked with testing out transitioning with images.
 
 # How to Run
 To run each project, use any IDE and run with a Live Server.
