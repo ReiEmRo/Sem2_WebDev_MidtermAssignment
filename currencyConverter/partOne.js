@@ -21,7 +21,7 @@ function converter() {
 		ratio = "(1:1)";
 	}
 
-// ALL CURRENCY VALUES TAKEN ON JUNE 29th 5PM
+// ALL CURRENCY VALUES TAKEN ON JUNE 29th 2021 5PM
 	else if (to == "EUR") {
 		switch(from) {
 			case "USD": convertedNum = num / 1.19; ratio = "(1:1.19)";
