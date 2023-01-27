@@ -2,7 +2,7 @@
 A three-part project consisting of a Currency Converter, A bakery site, and a travel page.
 
 ## `Currency Converter`
-A simple page that uses JavaScript to convert input values. (Convertion values used are hardcoded and taken from date stated in the inline comment).
+A simple page that uses JavaScript to convert input values. (Convertion values used are hardcoded and taken during the date stated in the inline comment).
 
 ## `New City Bakeries`
 With this part, we were tasked with creating a page that reads user input, calculates their total and prints them out at the bottom after submission.
