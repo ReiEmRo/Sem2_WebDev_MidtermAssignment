@@ -1,0 +1,69 @@
+
+#header {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: auto;
+	background-color: rgb(250, 250, 255);
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px;
+}
+
+#border {
+	background-color: rgb(250, 250, 255);
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px;
+}
+
+#innerBody {
+	padding: 5px 20px 20px;
+}
+
+#cakesTable {
+	border-spacing: 0px;
+	border: ridge;
+}
+
+#cakesTable tr th {
+	border-spacing: 0px;
+	padding: 10px 30px;
+	border: ridge;
+}
+
+#cakesTable tr td {
+	border-spacing: 0px;
+	border: ridge;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 1000px;
+	margin: 20px auto;
+}
+
+body::after {
+	/*bg img src: https://www.freepik.com/free-photo/rye-sliced-bread-table_1170534.htm#page=2&query=bakery%20background&position=8*/
+	background-image: url("img/bg.jpg");
+	background-size: cover;
+	position: fixed;
+	content: "";
+	top:0;
+	left: 0;
+	bottom: 0;
+	right:0;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+	font-size: 15px;
+	color: grey;
+}
+
+a {
+	color: grey;
+}

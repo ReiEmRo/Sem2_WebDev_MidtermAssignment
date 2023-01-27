@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currency Converter</title>
+
+	<link rel="stylesheet" type="text/css" href="partOne.css">
+	<script src="partOne.js"></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<br><div class="header">
+		<h1>Currency Converter</h1>
+		<hr><br>
+
+	<!-- Body input and converters -->
+		<form method="POST" onsubmit="return false;">
+			<table>
+				<tr>
+					<th>
+						<label for="From">Currency On Hand: </label>
+						<select name="ConvertingFrom" id="From" onchange="converter();">
+							<option value="EUR">Euro</option>
+							<option value="USD">US Dollar</option>
+							<option value="CAD">Canadian Dollar</option>
+							<option value="Bitcoin">Bitcoin Digital Currency</option>
+							<option value="Etherium">Etherium Digital Currency</option>
+						</select>
+					</th>
+					<th>
+						<label for="To">Convert To: </label>
+						<select name="ConvertingTo" id="To" onchange="converter();">
+							<option value="EUR">Euro</option>
+							<option value="USD">US Dollar</option>
+							<option value="CAD">Canadian Dollar</option>
+							<option value="Bitcoin">Bitcoin Digital Currency</option>
+							<option value="Etherium">Etherium Digital Currency</option>
+						</select>
+					</th>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="inputAmt">Enter number amount: </label>
+						<input type="number" id="inputAmt" min="0" value="0" step=".01" onchange="converter(); return false;">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Converted amount: <span id="outputAmt"></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Conversion ratio: <span id="ratio"></span>
+					</td>
+				</tr>
+			</table>
+		</form><br>
+	</div>
+</body>
+</html>

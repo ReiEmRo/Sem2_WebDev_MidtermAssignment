@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New City Bakeries</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="part3.css">
+	<script src="part3.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<h1>New City Bakeries</h1>
+		<h3>New City Bakeries Inc. <br>
+			Address: 1908 Downtown Avenue NE <br>
+			Calgary AB, Canada T7V 9E2 <br>
+			Tel: +1 800-987-8943 <br>
+			<a href="mailto:NCBakeries@bakedgoods.ca">NCBakeries@bakedgoods.ca</a></h3>
+	</div><br>
+
+	<div id="border">
+		<div id="innerBody">
+			<form onsubmit="calcTotal(); return false">
+				<h2>Contact Information: </h2>
+			<table>
+				<tr>
+					<td><label for="fname">Name: </label></td>
+					<td><input type="text" id="fname" placeholder="First" pattern="[A-Za-z -]{2,}" autofocus="" required> <input type="text" id="lname" placeholder="Last" pattern="[A-Za-z -]{2,}" required></td>
+				</tr>
+				<tr>
+					<td><label for="address">Street Address: </label></td>
+					<td><input type="text" id="address" required placeholder="123 Dogpark Street"></td>
+				</tr>
+				<tr>
+					<td><label for="postCode">Postal Code: </label></td>
+					<td><input type="text" id="postCode" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="L9L 9L9"></td>
+				</tr>
+				<tr>
+					<td><label for="phoneNum">Phone Number: </label></td>
+					<td><input type="tel" name="phone" id="phoneNum" required pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" placeholder="123-123-1234"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email: </label></td>
+					<td><input type="email" name="email" id="email" placeholder="johnDoe@email.com" required pattern="[A-Za-z0-9._-]+@[a-z0-9.-]+.[a-z]{2,}"></td>
+				</tr>
+			</table>
+			<hr>
+			<h2>Make your selection: </h2>
+			<table id="cakesTable">
+				<tr>
+					<th>Cakes</th>
+					<th>Minimum Size</th>
+					<th>Maximum Size</th>
+					<th>Base Price</th>
+				</tr>
+				<tr>
+					<td>Sheet cakes</td>
+					<td>30cm x 30cm (900cm<sup>2</sup>)</td>
+					<td>60cm x 45cm</td>
+					<td>$18.00</td>
+				</tr>
+				<tr>
+					<td>Round cakes</td>
+					<td>15cm radius (707cm<sup>2</sup>)</td>
+					<td>30cm radius</td>
+					<td>$15.00</td>
+				</tr>
+			</table><br>
+			<input type="radio" name="cake" id="sheetCake" value="Sheet" onchange="sheetChosen();">
+			<label for="sheetCake">Sheet Cake (Square or Rectangular)</label><br>
+			<input type="radio" name="cake" id="roundCake" value="Round" onchange="roundChosen();">
+			<label for="roundCake">Round Cake</label>
+
+			<div id="fields" style="display: none;">
+				<h2>Enter desired dimensions: </h2>
+				<table>
+					<tr>
+						<td><label for="length">Length (cm): </label></td>
+						<td><input type='number' name='length' id='length' value="30" min='30' max='60'></td>
+					</tr>
+					<tr>
+						<td><label for='width'>Width (cm): </label></td>
+					<td><input type='number' name='width' id='width' value="30" min='30' max='45'></td>
+					</tr>
+					<tr>
+						<td><label for='radius'>Radius (cm): </label></td>
+						<td><input type='number' name='radius' id='radius' value="15" min='15' max='30'></td>
+					</tr>
+					<tr>
+						<td><label for="layers"># of Layers: </label></td>
+						<td><input type="number" name="layers" id="layers" value="1" min="1" max="12"> (+50% of total price per extra layer)</td>
+					</tr>
+				</table>
+				<h2>Additional Choices: </h2>
+				<input type="checkbox" name="creamCheese" id="creamCheese">
+				<label for="creamCheese">Cream Cheese icing ($5)</label><br>
+				<input type="checkbox" name="fruitAndAlmonds" id="fruitAndAlmonds">
+				<label for="fruitAndAlmonds">Fruit and Almonds topping ($7)</label><br>
+				<input type="checkbox" name="jamFilling" id="jamFilling">
+				<label for="jamFilling">Fruit jam filling between layers ($4)</label><br>
+				<br><input type="submit" value="Checkout">
+			</div>
+			</form>
+			<div id="output" style="display: none;"></div>
+		</div>
+	</div>
+</body>
+</html>

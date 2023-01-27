@@ -1,0 +1,85 @@
+
+.border {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: auto;
+	background-color: rgb(250, 253, 255);
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px;
+}
+
+#logo {
+	width: 100px;
+	height: auto;
+	margin: 20px auto 0px auto;
+	box-shadow: none;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+figure span img {
+	animation: fade 3s infinite;
+	box-shadow: 5px 5px 10px grey;
+	border-radius: 5px;
+	width: 600px;
+	height: auto;
+}
+
+figure span figcaption {
+	animation: fade 3s infinite;
+}
+
+h1 {
+	font-size: 40px;
+	text-shadow: 3px 5px lightgrey;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 1000px;
+	margin: 20px auto;
+}
+
+body::after {
+	/*bg img src: https://www.vecteezy.com/vector-art/364463-water-wave-seamless-background*/
+	background-image: url("img/background.jpg");
+	position: fixed;
+	content: "";
+	top:0;
+	left: 0;
+	bottom: 0;
+	right:0;
+	opacity: 0.1;
+	z-index: -1;
+}
+
+figure {
+	margin: 50px auto;
+}
+
+p {
+	font-size: 15px;
+	color: grey;
+	line-height: 5px;
+}
+
+a {
+	color: grey;
+}
